@@ -1,26 +1,26 @@
 import React from 'react';
 import Button from './Button';
 
-class Header extends React.Component<any, any> {
+class NavBar extends React.Component<any, any> {
 
   render() {
     return (
-      <div className="header-container">
+      <div className="navbar-container">
         <Button>
-          About me
+          <b>ABOUT</b>
         </Button>
         <Button>
-          Education
+          <b>SKILLS</b>
         </Button>
         <Button>
-          Experience
+          <b>EXPERIENCE</b>
         </Button>
         <Button>
-          Projects
+          <b>PROJECTS</b>
         </Button>
       </div>
     )
   }
 }
 
-export default Header
+export default NavBar

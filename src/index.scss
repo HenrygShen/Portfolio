@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI";
+
+  h1 {
+      margin: 0.5rem;
+      font-size: 40px;
+      font-weight: bolder;
+      color: #4d4d4d
+  }
+
+  p {
+    margin: 0;
+    font-style: italic;
+  }
+}
+
+html {
+  background-color: #b9c7da;
+}
+
+#root {
+  height: 100%;
+}
