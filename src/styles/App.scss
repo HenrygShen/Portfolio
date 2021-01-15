@@ -1,6 +1,8 @@
 @import "./components/Button.scss";
 @import "./components/NavBar.scss";
 
+@import "./containers/SkillsSection.scss";
+
 .app-container {
   display: flex;
   flex-direction: column;

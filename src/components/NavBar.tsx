@@ -10,10 +10,7 @@ class NavBar extends React.Component<any, any> {
           <b>ABOUT</b>
         </Button>
         <Button>
-          <b>SKILLS</b>
-        </Button>
-        <Button>
-          <b>EXPERIENCE</b>
+          <b>SKILLS &amp; EXPERIENCE</b>
         </Button>
         <Button>
           <b>PROJECTS</b>
