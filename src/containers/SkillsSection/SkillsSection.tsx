@@ -1,4 +1,5 @@
 import React from 'react';
+import skills from './skills';
 
 class SkillsSection extends React.Component<any, any> {
 
@@ -10,18 +11,18 @@ class SkillsSection extends React.Component<any, any> {
         <h3>Programming Languages</h3>
         <div className="languages-list-wrapper">
           <ul className="languages-list">
-            <li>C</li>
+            <li>Python</li>
             <li>C++</li>
             <li>C#</li>
             <li>Java</li>
             <li>JavaScript</li>
           </ul>
           <ul className="languages-list">
-            <li className="bar"><div className="filled-bar"></div></li>
-            <li><div className="filled-bar"></div></li>
-            <li><div className="filled-bar"></div></li>
-            <li><div className="filled-bar"></div></li>
-            <li><div className="filled-bar"></div></li>
+            <li className="bar"><div className="filled-bar" /><div className="unfilled-bar" /></li>
+            <li className="bar"><div className="filled-bar" /><div className="unfilled-bar" /></li>
+            <li className="bar"><div className="filled-bar" /><div className="unfilled-bar" /></li>
+            <li className="bar"><div className="filled-bar" /><div className="unfilled-bar" /></li>
+            <li className="bar"><div className="filled-bar" /><div className="unfilled-bar" /></li>
           </ul>
         </div>
       </div>

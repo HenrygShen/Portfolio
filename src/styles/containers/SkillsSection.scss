@@ -10,15 +10,21 @@
     margin: 0 1rem 0 1rem;
     text-align: left;
 
+    .bar {
+      display: flex;
+      flex-direction: row;
+      border: solid 1px red;
+    }
+
     .filled-bar {
       background-color: red;
       height: 15px;
-      width: 400px;
-        -webkit-touch-callout: none;
-        -webkit-user-select: none; 
-           -moz-user-select: none; 
-            -ms-user-select: none; 
-                user-select: none;
+      width: 300px;
+    }
+
+    .unfilled-bar {
+      height: 15px;
+      width: 100px;
     }
   }
 }
