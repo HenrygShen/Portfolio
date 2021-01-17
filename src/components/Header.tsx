@@ -9,13 +9,13 @@ class Header extends React.Component<any, any> {
         <div className="header-wrapper">
           <h2>Henry Shen</h2>
           <div className="header-navbar">
-            <Button>
+            <Button hover>
               <b>ABOUT</b>
             </Button>
-            <Button>
+            <Button hover>
               <b>SKILLS &amp; EXPERIENCE</b>
             </Button>
-            <Button>
+            <Button hover>
               <b>PROJECTS</b>
             </Button>
           </div>

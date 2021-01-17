@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  padding: 0 0.5rem 0 0.5rem;
 
   &:hover {
     cursor: pointer;
@@ -16,4 +15,8 @@
     transition: 0.2;
     color: #ffffff;
   }
+}
+
+.bordered {
+  border: 1px solid;
 }
