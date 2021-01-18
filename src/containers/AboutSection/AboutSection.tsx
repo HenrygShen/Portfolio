@@ -14,6 +14,7 @@ class AboutSection extends React.Component<any, any> {
             bordered
             hover
             overrideStyles={{ padding: "1rem", fontSize: "25px"}}
+            onClick={this.props.executeScroll}
           >
             More about me
           </Button>

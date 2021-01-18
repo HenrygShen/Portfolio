@@ -13,6 +13,7 @@ class Button extends React.Component<IButtonProps, any> {
           "bordered": this.props.bordered
         })}
         style={{ color: this.props.color, ...this.props.overrideStyles }}
+        onClick={this.props.onClick}
       >
         {this.props.children}
       </div>
