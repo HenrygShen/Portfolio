@@ -5,8 +5,8 @@ class SkillsSection extends React.Component<any, any> {
 
   render() {
     return (
-      <div className="skills-container">
-        <h2 ref={this.props.myRef}>Skills</h2>
+      <div className="skills-container hidden" ref={this.props.myRef}>
+        <h2>Skills</h2>
         <p>This is where I would put my Skills</p>
         <h3>Programming Languages</h3>
         <div className="languages-list-wrapper">
