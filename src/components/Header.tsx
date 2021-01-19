@@ -9,10 +9,16 @@ class Header extends React.Component<any, any> {
         <div className="header-wrapper">
           <h2>Henry Shen</h2>
           <div className="header-navbar">
-            <Button hover>
+            <Button 
+              hover
+              onClick={() => this.props.executeScroll(this.props.aboutRef)}
+            >
               <b>ABOUT</b>
             </Button>
-            <Button hover>
+            <Button 
+              hover
+              onClick={() => this.props.executeScroll(this.props.skillsRef)}
+            >
               <b>SKILLS &amp; EXPERIENCE</b>
             </Button>
             <Button hover>

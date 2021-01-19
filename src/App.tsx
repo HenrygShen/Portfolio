@@ -1,19 +1,22 @@
 import React from 'react';
 import Header from './components/Header';
 import AboutSection from './containers/AboutSection/AboutSection';
+import HomeSection from './containers/HomeSection/HomeSection';
 import SkillsSection from './containers/SkillsSection/SkillsSection';
 import './styles/App.scss';
 
 class App extends React.Component<any, any> {
-  private myRef: any
+  private aboutRef: any
+  private skillsRef: any
 
   constructor(props: any) {
     super(props)
-    this.myRef = React.createRef()
+    this.aboutRef = React.createRef()
+    this.skillsRef = React.createRef()
   }
 
-  executeScroll = () => {
-    this.myRef.current.scrollIntoView();
+  executeScroll = (ref: any) => {
+    ref.current.scrollIntoView();
   }
 
   animateHTML() {
@@ -54,9 +57,10 @@ class App extends React.Component<any, any> {
   render() {
     return (
       <body className="app-container">
-        <Header />
-        <AboutSection executeScroll={this.executeScroll}/>
-        <SkillsSection myRef={this.myRef}/>
+        <Header executeScroll={this.executeScroll} aboutRef={this.aboutRef} skillsRef={this.skillsRef}/>
+        <HomeSection executeScroll={this.executeScroll} refToScrollTo={this.aboutRef}/>
+        <AboutSection myRef={this.aboutRef}/>
+        <SkillsSection myRef={this.skillsRef}/>
         <SkillsSection />
       </body>
     )

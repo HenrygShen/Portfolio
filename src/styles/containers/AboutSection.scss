@@ -1,13 +1,21 @@
 .about-container {
   display: flex;
-  font-size: 50px;
+  font-size: 25px;
   padding: 0 0 0 3rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 95vh;
+  height: 100vh;
 
   .about-link-wrapper {
     margin: 5rem 0 0 0;
+  }
+
+  .about-text-spacing {
+    margin-top: 1rem;
+  }
+
+  .about-title {
+    font-size: 50px;
   }
 }
