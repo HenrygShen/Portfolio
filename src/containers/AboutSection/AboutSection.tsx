@@ -5,7 +5,7 @@ class AboutSection extends React.Component<any, any> {
   render() {
     return (
       <div className="about-container hidden" ref={this.props.myRef}>
-        <span className="about-title">About Me</span>
+        <h2>About Me</h2>
         <span className="about-text-spacing">I studied Computer Systems Engineering at the University of Auckland</span>
         <span>and I am scheduled to graduate in the June of 2021.</span>
         <span className="about-text-spacing">I have an interest in all aspects of software development and</span>

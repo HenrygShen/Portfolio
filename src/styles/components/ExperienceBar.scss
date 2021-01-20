@@ -1,0 +1,23 @@
+.experience-bar-container {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 500px;
+  justify-content: space-between;
+
+  .bar {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px red;
+    width: 400px;
+  }
+  
+  .filled-bar {
+    background-color: red;
+    height: 100%;
+    width: 70%;
+  }
+  
+  .unfilled-bar {
+    width: 30%;
+  }
+}

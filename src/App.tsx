@@ -61,7 +61,6 @@ class App extends React.Component<any, any> {
         <HomeSection executeScroll={this.executeScroll} refToScrollTo={this.aboutRef}/>
         <AboutSection myRef={this.aboutRef}/>
         <SkillsSection myRef={this.skillsRef}/>
-        <SkillsSection />
       </body>
     )
   }

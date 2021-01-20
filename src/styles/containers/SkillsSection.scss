@@ -1,36 +1,16 @@
 .skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 5rem 0 0 3rem;
   height: 100vh;
-  padding-top: 5rem;
+  width: 100%;
 
-  .languages-list-wrapper {
+  .work-experience-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-  
-    .languages-list {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin: 0 1rem 0 1rem;
-      text-align: left;
-  
-      .bar {
-        display: flex;
-        flex-direction: row;
-        border: solid 1px red;
-      }
-  
-      .filled-bar {
-        background-color: red;
-        height: 15px;
-        width: 300px;
-      }
-  
-      .unfilled-bar {
-        height: 15px;
-        width: 100px;
-      }
-    }
+    flex-direction: column;
+    align-items: start;
   }
 }
 
