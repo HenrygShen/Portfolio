@@ -7,17 +7,12 @@
   .bar {
     display: flex;
     flex-direction: row;
-    border: solid 1px red;
+    border: solid 1px #d43b3be1;
     width: 400px;
   }
   
   .filled-bar {
-    background-color: red;
+    background-color: #d43b3be1;
     height: 100%;
-    width: 70%;
-  }
-  
-  .unfilled-bar {
-    width: 30%;
   }
 }
