@@ -3,8 +3,22 @@
   flex-direction: column;
   text-align: start;
   width: 70%;
+  border-left: 2px #d43b3be1 solid;
+  border-right: 2px #d43b3be1 solid;
+  padding: 0 2rem 0 2rem;
   
   .bottom-project-wrapper {
     display: flex;
+
+    .project-picture {
+      width: 200px;
+      height: 200px;
+    }
+
+    .project-text {
+      display: flex;
+      padding-left: 1rem;
+      flex-direction: column;
+    }
   }
 }
