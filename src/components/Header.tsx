@@ -21,7 +21,10 @@ class Header extends React.Component<any, any> {
             >
               <b>SKILLS &amp; EXPERIENCE</b>
             </Button>
-            <Button hover>
+            <Button 
+              hover
+              onClick={() => this.props.executeScroll(this.props.projectsRef)}
+            >
               <b>PROJECTS</b>
             </Button>
           </div>
