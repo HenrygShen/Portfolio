@@ -13,6 +13,7 @@ const projects = [
         name: "Github"
       }
     ],
+    portrait: false,
     screenshots: []
   },
   {
@@ -32,11 +33,12 @@ const projects = [
         name: "Github"
       }
     ],
+    portrait: true,
     screenshots: []
   },
   {
     name: "Pacmana Jones",
-    thumbnail: "placeholder.jpg",
+    thumbnail: "Pacman/1.png",
     brief: "A Pacman java game that parodies Indiana Jones.",
     descriptions: [
       "A modified version of pacman where Indiana Jones has become Pacman.",
@@ -51,7 +53,8 @@ const projects = [
         name: "Github"
       }
     ],
-    screenshots: []
+    portrait: false,
+    screenshots: ["Pacman/1.png", "Pacman/2.png", "Pacman/3.png", "Pacman/4.png", "Pacman/5.png", "Pacman/6.png", "Pacman/7.png"]
   },
   {
     name: "Perfect Pitch Test",
@@ -68,11 +71,12 @@ const projects = [
         name: "Github"
       }
     ],
+    portrait: false,
     screenshots: []
   },
   {
     name: "SwimmyFishy",
-    thumbnail: "placeholder.jpg",
+    thumbnail: "SwimmyFishy/1.png",
     brief: "A mobile game like FlappyBird but underwater.",
     descriptions: [
       "This is an underwater version of the classic game FlappyBird.",
@@ -86,7 +90,8 @@ const projects = [
         name: "Github"
       }
     ],
-    screenshots: []
+    portrait: true,
+    screenshots: ["SwimmyFishy/1.png", "SwimmyFishy/2.png", "SwimmyFishy/3.png", "SwimmyFishy/4.png", "SwimmyFishy/5.png", "SwimmyFishy/6.png"]
   }
 ]
 

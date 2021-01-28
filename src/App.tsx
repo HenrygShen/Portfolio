@@ -7,15 +7,10 @@ import SkillsSection from './containers/SkillsSection/SkillsSection';
 import './styles/App.scss';
 
 class App extends React.Component<any, any> {
-  private aboutRef: any
-  private skillsRef: any
-  private projectsRef: any
-
-  constructor(props: any) {
-    super(props)
-    this.aboutRef = React.createRef()
-    this.skillsRef = React.createRef()
-    this.projectsRef = React.createRef()
+  state = {
+    aboutRef: React.createRef(),
+    skillsRef: React.createRef(),
+    projectsRef: React.createRef()
   }
 
   executeScroll = (ref: any) => {
@@ -58,13 +53,15 @@ class App extends React.Component<any, any> {
   }
 
   render() {
+    let { aboutRef, skillsRef, projectsRef } = this.state
+
     return (
       <body className="app-container">
-        <Header executeScroll={this.executeScroll} aboutRef={this.aboutRef} skillsRef={this.skillsRef} projectsRef={this.projectsRef} />
-        <HomeSection executeScroll={this.executeScroll} refToScrollTo={this.aboutRef} />
-        <AboutSection myRef={this.aboutRef} />
-        <SkillsSection myRef={this.skillsRef} />
-        <ProjectsSection myRef={this.projectsRef} />
+        <Header executeScroll={this.executeScroll} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} />
+        <HomeSection executeScroll={this.executeScroll} refToScrollTo={aboutRef} />
+        <AboutSection myRef={aboutRef} />
+        <SkillsSection myRef={skillsRef} />
+        <ProjectsSection myRef={projectsRef} />
       </body>
     )
   }

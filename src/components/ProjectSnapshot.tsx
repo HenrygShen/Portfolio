@@ -1,13 +1,34 @@
+import cx from 'classnames'
+import { COPYFILE_EXCL } from 'constants'
 import React from 'react'
 
 class ProjectSnapshot extends React.Component<any, any> {
   state = {
-    showDescription: false
+    imgsrc: this.props.project.thumbnail,
+    pictureIndex: 0,
+    timerInterval: 0
   }
 
-  toggleDescription() {
-    this.setState({showDescription: !this.state.showDescription})
+  carousel = () => {
+    let nextPicIndex = this.state.pictureIndex + 1
+
+    if (nextPicIndex >= this.props.project.screenshots.length) {
+      nextPicIndex = 0
+    }
+
+    this.setState({
+      imgsrc: this.props.project.screenshots[nextPicIndex],
+      pictureIndex: nextPicIndex
+    })
   }
+
+  resetImage = () => {
+    clearInterval(this.state.timerInterval)
+    this.setState({
+      imgsrc: this.props.project.thumbnail,
+      pictureIndex: 0
+    })
+  }  
 
   render() {
     return (
@@ -15,18 +36,21 @@ class ProjectSnapshot extends React.Component<any, any> {
         <h3>{this.props.project.name}</h3>
         <div className="bottom-project-wrapper">
           <img 
+            id="picture"
             alt="thumbnail" 
-            src={require(`../assets/thumbnails/${this.props.project.thumbnail}`)} 
-            className="project-picture"
-            onClick={() => this.toggleDescription()}
+            src={require(`../assets/thumbnails/${this.state.imgsrc}`)} 
+            className={cx({
+              "project-picture hover": true,
+              "portrait": this.props.project.portrait
+            })}
+            onMouseEnter={() => this.setState({timerInterval: setInterval(this.carousel, 1000)})}
+            onMouseLeave={() => this.resetImage()}
           />
           <div className="project-text">
             {
-              this.state.showDescription ? 
               this.props.project.descriptions.map((description: string) => (
                 <span>{description}</span>
-              )) :
-              <span>{this.props.project.brief}</span>
+              ))
             }
           </div>
           
