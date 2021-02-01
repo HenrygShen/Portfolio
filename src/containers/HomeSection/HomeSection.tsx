@@ -7,7 +7,7 @@ class HomeSection extends React.Component<any, any> {
     return (
       <div className="home-container">
         <span>I'm Henry.</span>
-        <span>Proud New Zealander.</span>
+        <span>Situated in New Zealand.</span>
         <span>Software developer &amp; casual baker.</span>
         <div className="home-link-wrapper">
           <Button

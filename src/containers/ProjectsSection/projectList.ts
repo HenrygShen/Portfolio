@@ -1,8 +1,7 @@
 const projects = [
   {
     name: "Portfolio",
-    thumbnail: "placeholder.jpg",
-    brief: "The portfolio website you are currently looking at.",
+    thumbnail: "Portfolio/1.png",
     descriptions: [
       "A portfolio website developed with React. Showcases my skills and experience",
       "and gives a little insight to who I am."
@@ -14,12 +13,11 @@ const projects = [
       }
     ],
     portrait: false,
-    screenshots: []
+    screenshots: ["Portfolio/1.png", "Portfolio/2.png"]
   },
   {
     name: "Smart Diet Diary",
-    thumbnail: "placeholder.jpg",
-    brief: "A mobile application used to track your diet. Uses AI to detect and identify foods in a picture.",
+    thumbnail: "Smart-Diet-Diary/1.png",
     descriptions: [
       "A Diet diary for the mobile platform developed in hopes of making diet tracking more convenient and helpful.",
       "The Smart Diet Diary was developed using the react-native JavaScript framework for the front-end",
@@ -34,12 +32,11 @@ const projects = [
       }
     ],
     portrait: true,
-    screenshots: []
+    screenshots: ["Smart-Diet-Diary/1.png", "Smart-Diet-Diary/2.png", "Smart-Diet-Diary/3.png", "Smart-Diet-Diary/4.png"]
   },
   {
     name: "Pacmana Jones",
     thumbnail: "Pacman/1.png",
-    brief: "A Pacman java game that parodies Indiana Jones.",
     descriptions: [
       "A modified version of pacman where Indiana Jones has become Pacman.",
       "The player will need to collect artifacts and avoid the ghosts in the maze.",
@@ -58,8 +55,7 @@ const projects = [
   },
   {
     name: "Perfect Pitch Test",
-    thumbnail: "placeholder.jpg",
-    brief: "A web application used to train your ears to determine what note is being played.",
+    thumbnail: "Perfect-Pitch-Test/1.png",
     descriptions: [
       "A web application that allows the user to test their ability to identify which music note is",
       "being played and train their perfect pitch. The number of different notes that are tested can",
@@ -72,12 +68,11 @@ const projects = [
       }
     ],
     portrait: false,
-    screenshots: []
+    screenshots: ["Perfect-Pitch-Test/1.png", "Perfect-Pitch-Test/2.png", "Perfect-Pitch-Test/3.png", "Perfect-Pitch-Test/4.png"]
   },
   {
     name: "SwimmyFishy",
     thumbnail: "SwimmyFishy/1.png",
-    brief: "A mobile game like FlappyBird but underwater.",
     descriptions: [
       "This is an underwater version of the classic game FlappyBird.",
       "An additional mechanic was added to this game which allowed the player to pick up",

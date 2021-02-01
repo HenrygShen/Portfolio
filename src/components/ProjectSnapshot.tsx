@@ -1,6 +1,6 @@
 import cx from 'classnames'
-import { COPYFILE_EXCL } from 'constants'
 import React from 'react'
+import Button from './Button'
 
 class ProjectSnapshot extends React.Component<any, any> {
   state = {
@@ -46,14 +46,27 @@ class ProjectSnapshot extends React.Component<any, any> {
             onMouseEnter={() => this.setState({timerInterval: setInterval(this.carousel, 1000)})}
             onMouseLeave={() => this.resetImage()}
           />
-          <div className="project-text">
+          <div className="project-description">
             {
               this.props.project.descriptions.map((description: string) => (
                 <span>{description}</span>
               ))
             }
           </div>
-          
+          <div className="project-links">
+          {
+              this.props.project.links.map((link: any) => (
+                <Button 
+                  hover
+                  bordered
+                  overrideStyles={{ padding: "1rem 1.5rem 1rem 1.5rem", fontSize: "18px"}}
+                  onClick={() => window.open(link.url)}
+                >
+                  {link.name}
+                </Button>
+              ))
+            }
+          </div>
         </div>
       </div>
     )
