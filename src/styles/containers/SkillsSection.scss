@@ -11,17 +11,58 @@
     justify-content: space-between;
     width: 80%;
 
-    .work-experience-container {
-      .experience-content {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-      }
+    .experience-content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
     }
-    
-    .language-container {
-    
+  }
+
+  @media (max-width: 1350px) {
+    font-size: 13px;
+
+    .skills-wrapper {
+      width: 87%;
     }
+  }
+
+  @media (max-width: $tablet-land) {
+    font-size: 11px;
+    .skills-wrapper {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 10px;
+
+    .skills-wrapper {
+      width: 93%;
+    }
+  }
+
+  @media (max-width: 730px) {
+    font-size: 13px;
+
+    .skills-wrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $phone) {
+    font-size: 11px;
+    
+    .skills-wrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $phone-sm) {
+    font-size: 8px;
   }
 }
 

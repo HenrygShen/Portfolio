@@ -7,7 +7,7 @@ class Header extends React.Component<any, any> {
     return (
       <header className="site-header">
         <div className="header-wrapper">
-          <h1>Henry Shen</h1>
+          <h2>Henry Shen</h2>
           <div className="header-navbar">
             <Button 
               hover

@@ -14,7 +14,14 @@ class App extends React.Component<any, any> {
   }
 
   executeScroll = (ref: any) => {
-    ref.current.scrollIntoView();
+    // ref.current.scrollIntoView()
+    var elementPosition = ref.current.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - 75;
+
+    window.scrollTo({
+         top: offsetPosition,
+         behavior: "smooth"
+    });
   }
 
   animateHTML() {

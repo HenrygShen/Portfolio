@@ -13,13 +13,12 @@ class HomeSection extends React.Component<any, any> {
           <Button
             bordered
             hover
-            overrideStyles={{ padding: "1rem", fontSize: "25px"}}
+            overrideStyles={{ padding: "1rem", fontSize: "18px" }}
             onClick={() => this.props.executeScroll(this.props.refToScrollTo)}
           >
             More about me
           </Button>
         </div>
-        
       </div>
     )
   }

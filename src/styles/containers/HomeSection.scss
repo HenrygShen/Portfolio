@@ -10,4 +10,43 @@
   .home-link-wrapper {
     margin: 5rem 0 0 0;
   }
+
+  @media (max-width: $tablet-land) {
+    font-size: 40px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 30px;
+
+    .home-link-wrapper {
+      margin: 3rem 0 0 0;
+    }
+  }
+
+  @media (max-width: $phone) {
+    font-size: 20px;
+    padding: 0 0 0 2rem;
+
+    .home-link-wrapper {
+      margin: 2rem 0 0 0;
+    }
+  }
+
+  @media (max-width: $phone-sm) {
+    font-size: 15px;
+    padding: 0 0 0 1.5rem;
+
+    .home-link-wrapper {
+      margin: 2rem 0 0 0;
+    }
+  }
+
+  @media (max-width: $phone-x-sm) {
+    font-size: 15px;
+    padding: 0 0 0 1rem;
+
+    .home-link-wrapper {
+      margin: 2rem 0 0 0;
+    }
+  }
 }

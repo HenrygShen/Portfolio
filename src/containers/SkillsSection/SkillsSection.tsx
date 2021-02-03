@@ -8,8 +8,8 @@ class SkillsSection extends React.Component<any, any> {
     return (
       <div className="skills-page-container hidden" ref={this.props.myRef}>
         <div className="skills-wrapper">
-          <div className="work-experience-container">
-            <h2>Work Experience</h2>
+          <div>
+            <h1>Work Experience</h1>
             <div className="experience-content">
               <span>Enghouse Interactive: 2018 - 2019</span>
               <span>Internship: 3 months</span>
@@ -27,8 +27,8 @@ class SkillsSection extends React.Component<any, any> {
               <span>DevOps and spent most of my time working on various backend tasks.</span>
             </div>
           </div>
-          <div className="language-container">
-            <h2>Skills</h2>
+          <div>
+            <h1>Skills</h1>
             {skills.map(skill => (
                 <ExperienceBar skillName={skill[0]} skillPercentage={skill[1]} />
             ))}

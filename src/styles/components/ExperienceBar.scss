@@ -15,4 +15,52 @@
     background-color: #d43b3be1;
     height: 100%;
   }
+
+  @media (max-width: 1350px) {
+    width: 400px;
+
+    .bar {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: $tablet-land) {
+    width: 325px;
+
+    .bar {
+      width: 250px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    width: 300px;
+
+    .bar {
+      width: 225px;
+    }
+  }
+
+  @media (max-width: 730px) {
+    width: 400px;
+
+    .bar {
+      width: 300px;
+    }
+  }
+
+  @media (max-width: $phone) {
+    width: 300px;
+
+    .bar {
+      width: 225px;
+    }
+  }
+
+  @media (max-width: $phone-sm) {
+    width: 250px;
+
+    .bar {
+      width: 175px;
+    }
+  }
 }

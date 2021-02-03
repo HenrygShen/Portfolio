@@ -6,8 +6,11 @@ class ProjectsSection extends React.Component<any, any> {
 
   render() {
     return (
-      <div className="projects-container hidden" ref={this.props.myRef}>
-        <h2>Projects</h2>
+      <div className="projects-container hidden">
+        <div ref={this.props.myRef}>
+          <h1>Projects</h1>
+        </div>
+        
         {projects.map((project) => (
           <ProjectSnapshot project={project} />
         ))}
