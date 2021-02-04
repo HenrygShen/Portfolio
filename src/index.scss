@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "JuraBold";
 
   h1 {
     font-size: 50px;
@@ -32,7 +32,7 @@ body {
 
   @media (max-width: $tablet) {
     h1 {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     h2 {
@@ -49,6 +49,10 @@ body {
   @media (max-width: $phone-sm) {
     h2 {
       font-size: 12px;
+    }
+
+    h3 {
+      font-size: 25px;
     }
   }
 
@@ -67,4 +71,9 @@ html {
 #root {
   height: 100%;
   color: #e6e6e6
+}
+
+@font-face {
+  font-family: JuraBold;
+  src: url("./assets/fonts/Jura-Bold.ttf");
 }
