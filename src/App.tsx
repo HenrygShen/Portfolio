@@ -14,9 +14,8 @@ class App extends React.Component<any, any> {
   }
 
   executeScroll = (ref: any) => {
-    // ref.current.scrollIntoView()
-    var elementPosition = ref.current.getBoundingClientRect().top;
-    var offsetPosition = elementPosition + window.pageYOffset - 75;
+    var elementPosition = ref.current.getBoundingClientRect().top
+    var offsetPosition = elementPosition + window.pageYOffset - 75
 
     window.scrollTo({
          top: offsetPosition,
@@ -42,7 +41,7 @@ class App extends React.Component<any, any> {
   
     function checkPosition() {
       for (var i = 0; i < elements.length; i++) {
-        var positionFromTop = elements[i].getBoundingClientRect().top;
+        var positionFromTop = elements[i].getBoundingClientRect().top
   
         if (positionFromTop - windowHeight <= 0) {
           elements[i].className = elements[i].className.replace('hidden', 'fade-in-element')
@@ -56,7 +55,7 @@ class App extends React.Component<any, any> {
   }
 
   componentDidMount() {
-    this.animateHTML().init();
+    this.animateHTML().init()
   }
 
   render() {

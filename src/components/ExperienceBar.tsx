@@ -1,6 +1,7 @@
 import React from 'react'
+import { IExperienceBarProps } from './IExperienceBarProps'
 
-class ExperienceBar extends React.Component<any, any> {
+class ExperienceBar extends React.Component<IExperienceBarProps, any> {
 
   render() {
     return (
