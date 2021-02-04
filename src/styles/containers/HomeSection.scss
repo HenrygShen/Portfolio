@@ -8,8 +8,40 @@
   justify-content: center;
   height: 95vh;
 
+  .logo-links {
+    display: flex;
+    margin: 1rem 0 0 0;
+
+    .logo {
+      padding: 0 1rem 0 0;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      svg {
+        width: 40px;
+  
+        path, line, rect, polyline {
+          fill: #d43b3be1;
+        }
+
+        @media (max-height: $tablet) {
+          width: 35px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1);
+  
+        path, line, rect, polyline {
+          transition: 1s;
+          fill: white;
+        }
+      }
+    }
+  }
+
   .home-link-wrapper {
-    margin: 5rem 0 0 0;
+    margin: 4rem 0 0 0;
   }
 
   @media (max-width: $tablet-land) {
