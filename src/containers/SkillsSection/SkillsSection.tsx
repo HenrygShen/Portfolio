@@ -7,8 +7,8 @@ class SkillsSection extends React.Component<any, any> {
   render() {
     return (
       <div className="skills-page-container hidden" ref={this.props.myRef}>
-        <div className="skills-wrapper">
-          <div>
+        <div className="skills-and-exp-wrapper">
+          <div className="experience-wrapper">
             <h1>Work Experience</h1>
             <div className="experience-content">
               <span>Enghouse Interactive: 2018 - 2019</span>
