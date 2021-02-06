@@ -9,6 +9,11 @@ body {
     color: inherit
   }
 
+  li {
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+
   h1 {
     font-size: 50px;
     font-weight: normal;

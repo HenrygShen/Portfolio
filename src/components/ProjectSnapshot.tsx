@@ -36,14 +36,17 @@ class ProjectSnapshot extends React.Component<any, any> {
         <div className="snapshot-wrapper">
           <h3>{this.props.project.name}</h3>
           <div className="bottom-project-wrapper">
-            <div className="image-and-description">
+            <div className={cx({
+              "image-and-description": true,
+              "landscape": !this.props.project.portrait
+            })}>
               <img 
                 id="picture"
                 alt="thumbnail" 
                 src={require(`../assets/thumbnails/${this.state.imgsrc}`)} 
                 className={cx({
                   "project-picture hover": true,
-                  "portrait": this.props.project.portrait
+                  "portrait": this.props.project.portrait,
                 })}
                 onMouseEnter={() => this.setState({timerInterval: setInterval(this.carousel, 1000)})}
                 onMouseLeave={() => this.resetImage()}
