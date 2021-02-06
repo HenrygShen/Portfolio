@@ -4,8 +4,7 @@
   padding: 0 3rem 0 3rem;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  height: 100vh;
+  height: 80vh;
   max-width: 800px;
 
   .about-text-wrapper{
@@ -28,17 +27,14 @@
   }
 
   @media (max-width: $phone) {
-    font-size: 11px;
     padding: 0 2rem 0 2rem;
   }
 
   @media (max-width: $phone-sm) {
-    font-size: 9px;
     padding: 0 1.5rem 0 1.5rem;
   }
 
   @media (max-width: $phone-x-sm) {
-    font-size: 12px;
     padding: 0 1rem 0 1rem;
   }
 }
