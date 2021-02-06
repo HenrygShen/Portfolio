@@ -9,7 +9,8 @@ class Button extends React.Component<IButtonProps, any> {
       <div 
         className={cx({
           "button-container": true,
-          "hover": this.props.hover,
+          "highlight": this.props.highlight,
+          "hover": this.props.hover,    
           "bordered": this.props.bordered
         })}
         style={{ color: this.props.color, ...this.props.overrideStyles }}

@@ -35,4 +35,12 @@
 
 .bordered {
   border: 1px solid;
+  box-sizing: border-box;
+}
+
+.highlight {
+  &:hover {
+    transition: 0.2s;
+    color: #d43b3be1;
+  }
 }

@@ -33,7 +33,7 @@ class HomeSection extends React.Component<any, any> {
         <div className="home-link-wrapper">
           <Button
             bordered
-            hover
+            highlight
             overrideStyles={{ padding: "1rem", fontSize: "18px" }}
             onClick={() => this.props.executeScroll(this.props.refToScrollTo)}
           >

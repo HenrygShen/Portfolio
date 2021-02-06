@@ -61,7 +61,7 @@ class ProjectSnapshot extends React.Component<any, any> {
             {
                 this.props.project.links.map((link: any) => (
                   <Button 
-                    hover
+                    highlight
                     bordered
                     overrideStyles={{ padding: "1rem 1.5rem 1rem 1.5rem", fontSize: "18px"}}
                     onClick={() => window.open(link.url)}

@@ -23,7 +23,7 @@ class ProjectsSection extends React.Component<any, any> {
     } 
   }
 
-  updateHrefOnClick = (ref: any, isAdd: boolean) => {
+  executeScroll = (isAdd: boolean) => {
     let index = 0
     
     if (isAdd){
@@ -47,7 +47,13 @@ class ProjectsSection extends React.Component<any, any> {
       carouselIndex: index
     })
 
-    ref.current?.setAttribute("href", `#${projects[index].id}`)
+    var elementToScrollTo = document.getElementById(projects[index].id)
+    var carouselElement = document.getElementById("slides")
+
+    if (elementToScrollTo && carouselElement) {
+      var elementPosition = elementToScrollTo.offsetLeft
+      carouselElement.scrollLeft = elementPosition
+    }
   }
 
   render() {
@@ -57,7 +63,7 @@ class ProjectsSection extends React.Component<any, any> {
           <h1>Projects</h1>
         </div>
         <div className="slider">
-          <div className="slides">
+          <div id="slides" className="slides">
             {projects.map((project) => (
               <ProjectSnapshot project={project} />
             ))}
@@ -65,28 +71,24 @@ class ProjectsSection extends React.Component<any, any> {
         </div>
         <div className="carousel-button-container">
           {
-            <a ref={this.state.prevButtonRef} href="#hash">
               <Button 
-                hover 
+                highlight 
                 bordered 
-                onClick={() => this.updateHrefOnClick(this.state.prevButtonRef, false)}
+                onClick={() => this.executeScroll(false)}
                 overrideStyles={{ padding: "1rem", fontSize: "18px", margin:"0 1rem 0 0" }}
               >
                 Back
               </Button>
-            </a>
           }
           {
-            <a ref={this.state.nextButtonRef} href="#hash">
               <Button 
-                hover 
+                highlight
                 bordered 
-                onClick={() => this.updateHrefOnClick(this.state.nextButtonRef, true)}
+                onClick={() => this.executeScroll(true)}
                 overrideStyles={{ padding: "1rem", fontSize: "18px", margin:"0 0 0 1rem" }}
               >
                 Next
               </Button>
-            </a>
           }
         </div>
       </div>
