@@ -49,6 +49,14 @@ class ProjectSnapshot extends React.Component<any, any> {
                 onMouseLeave={() => this.resetImage()}
               />
               <div className="project-description">
+                <ul>
+                  {
+                    this.props.project.techStack.map((tech: string) => (
+                      <li>{tech}</li>
+                    ))
+                  }
+                </ul>
+                
                 {
                   this.props.project.descriptions.map((description: string) => (
                     <span>{description}</span>
