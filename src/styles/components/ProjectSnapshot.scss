@@ -5,7 +5,8 @@
   width: 100%;
 
   .snapshot-wrapper {
-    padding: 0 3rem 0 3rem;
+    width: 90vw;
+
 
     .bottom-project-wrapper {
       display: flex;
@@ -39,7 +40,7 @@
 
   .hover {
     &:hover {
-      transform: scale(1.07);
+      transform: scale(1.01);
       transition: 0.5s;
     }
   }
@@ -49,14 +50,10 @@
     width: 200px;
   }
 
-  @media (max-width: $desktop) {
-    width: 85%;
-  }
-
   @media (max-width: $tablet-land) {
-    width: 90%;
     .snapshot-wrapper {
       padding: 0 3rem 0 3rem;
+
       .bottom-project-wrapper {
         .image-and-description {
           .project-picture {
@@ -72,9 +69,11 @@
   }
 
   @media (max-width: $tablet) {
-    padding: 0 0 0 0;
+    padding: 0;
+
     .snapshot-wrapper {
       padding: 0 3rem 0 3rem;
+
       .bottom-project-wrapper {
         .image-and-description {
           flex-direction: column;
@@ -94,24 +93,15 @@
     .portrait {
       width: 150px;
     }
-
-    .hover {
-      &:hover {
-        transform: scale(1.01);
-        transition: 0.5s;
-      }
-    }
   }
 
   @media (max-width: $phone) {
-    width: 95%;
-
     .snapshot-wrapper {
       padding: 0 2rem 0 2rem;
 
       .bottom-project-wrapper {
-
         flex-direction: column;
+
         .image-and-description {
           .project-description {
             font-size: 12px;

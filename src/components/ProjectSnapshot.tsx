@@ -32,7 +32,7 @@ class ProjectSnapshot extends React.Component<any, any> {
 
   render() {
     return (
-      <div className="snapshot-container">
+      <div id={this.props.project.id} className="snapshot-container">
         <div className="snapshot-wrapper">
           <h3>{this.props.project.name}</h3>
           <div className="bottom-project-wrapper">

@@ -1,6 +1,7 @@
 const projects = [
   {
     name: "Portfolio",
+    id: "portfolio",
     thumbnail: "Portfolio/1.png",
     descriptions: [
       "A portfolio website developed with React. Showcases my skills and experience and gives a little insight to who I am."
@@ -16,6 +17,7 @@ const projects = [
   },
   {
     name: "Smart Diet Diary",
+    id: "smart-diet-diary",
     thumbnail: "Smart-Diet-Diary/1.png",
     descriptions: [
       "A Diet diary for the mobile platform developed in hopes of making diet tracking more convenient and helpful.",
@@ -34,6 +36,7 @@ const projects = [
   },
   {
     name: "Pacmana Jones",
+    id: "pacmana-jones",
     thumbnail: "Pacman/1.png",
     descriptions: [
       "A modified version of pacman where Indiana Jones has become Pacman.",
@@ -53,6 +56,7 @@ const projects = [
   },
   {
     name: "Perfect Pitch Test",
+    id: "perfect-pitch-test",
     thumbnail: "Perfect-Pitch-Test/1.png",
     descriptions: [
       "A web application that allows the user to test their ability to identify which music note is being played and train their perfect pitch.",
@@ -70,6 +74,7 @@ const projects = [
   },
   {
     name: "SwimmyFishy",
+    id: "swimmyfishy",
     thumbnail: "SwimmyFishy/1.png",
     descriptions: [
       "This is an underwater version of the classic game FlappyBird.",
