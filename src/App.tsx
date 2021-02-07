@@ -62,13 +62,13 @@ class App extends React.Component<any, any> {
     let { aboutRef, skillsRef, projectsRef } = this.state
 
     return (
-      <body className="app-container">
+      <div className="app-container">
         <Header executeScroll={this.executeScroll} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} />
         <HomeSection executeScroll={this.executeScroll} refToScrollTo={aboutRef} />
         <AboutSection myRef={aboutRef} />
         <SkillsSection myRef={skillsRef} />
         <ProjectsSection myRef={projectsRef} />
-      </body>
+      </div>
     )
   }
 }

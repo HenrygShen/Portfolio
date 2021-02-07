@@ -64,8 +64,8 @@ class ProjectsSection extends React.Component<any, any> {
         </div>
         <div className="slider">
           <div id="slides" className="slides">
-            {projects.map((project) => (
-              <ProjectSnapshot project={project} />
+            {projects.map((project, index) => (
+              <ProjectSnapshot key={index} project={project} />
             ))}
           </div>
         </div>

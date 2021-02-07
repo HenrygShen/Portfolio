@@ -14,12 +14,12 @@ class HomeSection extends React.Component<any, any> {
         <span>Software developer &amp; casual baker.</span>
         <div className="logo-links">
           <div className="logo">
-            <a target="_blank" href="https://www.linkedin.com/in/henry-shen-868a4b174/">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/henry-shen-868a4b174/">
               <LinkedinLogo />
             </a>
           </div>
           <div className="logo">
-            <a target="_blank" href="https://github.com/HenrygShen">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/HenrygShen">
               <GithubLogo />
             </a>
           </div>

@@ -24,8 +24,8 @@ class SkillsSection extends React.Component<any, any> {
           </div>
           <div>
             <h1>Skills</h1>
-            {skills.map(skill => (
-                <ExperienceBar skillName={skill[0]} skillPercentage={skill[1]} />
+            {skills.map((skill, index) => (
+                <ExperienceBar key={index} skillName={skill[0]} skillPercentage={skill[1]} />
             ))}
           </div>
         </div>

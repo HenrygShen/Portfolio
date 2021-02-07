@@ -54,15 +54,15 @@ class ProjectSnapshot extends React.Component<any, any> {
               <div className="project-description">
                 <ul>
                   {
-                    this.props.project.techStack.map((tech: string) => (
-                      <li>{tech}</li>
+                    this.props.project.techStack.map((tech: string, index: number) => (
+                      <li key={index}>{tech}</li>
                     ))
                   }
                 </ul>
                 
                 {
-                  this.props.project.descriptions.map((description: string) => (
-                    <span>{description}</span>
+                  this.props.project.descriptions.map((description: string, index: number) => (
+                    <span key={index}>{description}</span>
                   ))
                 }
               </div>
@@ -70,8 +70,9 @@ class ProjectSnapshot extends React.Component<any, any> {
             
             <div className="project-links">
             {
-                this.props.project.links.map((link: any) => (
+                this.props.project.links.map((link: any, index: number) => (
                   <Button 
+                    key={index}
                     highlight
                     bordered
                     overrideStyles={{ padding: "1rem 1.5rem 1rem 1.5rem", fontSize: "18px"}}
