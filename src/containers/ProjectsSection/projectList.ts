@@ -76,7 +76,7 @@ const projects = [
     name: "Portfolio",
     id: "portfolio",
     thumbnail: "Portfolio/1.png",
-    techStack: ["JavaScript", "Android Studio"],
+    techStack: ["JavaScript", "React"],
     descriptions: [
       "A portfolio website developed with React. Showcases my skills and experience and gives a little insight to who I am."
     ],
